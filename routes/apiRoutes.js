@@ -1,5 +1,7 @@
 //Global Variables
 const savedNotes = require("../db/db.json");
+const fs = require("fs");
+const shortid = require("shortid"); //where does this come in?
 
 
 
@@ -12,11 +14,26 @@ const savedNotes = require("../db/db.json");
 
 module.exports = (app) => {
     app.get("/api/notes", (req, res) => {
+        fs.readFile("db.json", (err, data) => { //does this need to parse the info from db.json?
+            if (err) throw err;
+            return(data)
+        })
         res.json(savedNotes);
     })
     
     app.post("/api/notes", (req,res) => {
         savedNotes.push(req.body);
+        fs.appendFile //does this need to stringify the info going in to db.json?
         res.json();
     })
+
+    app.delete("/api/notes/:id", (req, res) => {
+        fs.readFile("db.json", (err, data) => {
+            if (err) throw err;
+            else if (data.id === id) {
+
+            }
+        })
+    })
 }
+
