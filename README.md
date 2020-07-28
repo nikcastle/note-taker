@@ -21,8 +21,8 @@ This project runs via browser, no installation is required in order to use it.
 3. Type a note title in the Note Title section and the contents of you note in the Note Text section.
 4. To save the note, click on the Save icon in the upper right corner. 
 5. To delete a note, click on the trash icon of the relevant note in the Note List on the left side of the page. To switch to entering a new note after viewing a saved note, click on the pencil icon in the upper right corner.
-![Note Taker home page](./assets/images/note-taker-homepage.png)
-![Adding a new note](./assets/images/new-note.png)
+![Note Taker home page](./public/assets/images/note-taker-homepage.png)
+![Adding a new note](./public/assets/images/new-note.png)
 
 ## Credits
  This project was completed using previously written code by the University of Denver bootcamp curriculum.
